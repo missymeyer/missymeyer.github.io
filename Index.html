@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 
-<!-- Basic CSS Example -->
+<!-- CSS Stylesheets with Relative Paths -->
 
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Basic CSS Example</title>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <title>CSS Stylesheets with Relative Paths</title>
+
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 
-  <h1>Awesome Header</h1>
-  <h2>Smaller Awesome Header</h2>
-  <h3>Even Smaller Header</h3>
+  <header>
+    <h1>Student Bio</h1>
+  </header>
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem consequatur unde aut dolores odio hic, accusamus recusandae ipsam illum enim voluptatibus obcaecati totam tempora eum quod sapiente. Corporis, quidem, culpa?</p>
-  <img src="https://pbs.twimg.com/media/BsgYfMQCQAAWVKH.jpg" alt="Awesome" width="25%">
+  <main class="container">
+    <section id="main-bio">
+      <section id="figure">
+        <h2 id="bio-name">Your Name</h2>
+        <img id="bio-image" src="https://placehold.it/200x200" alt="Your Name">
+      </section>
+      <p>Write a short paragraph or two about yourself, or use placeholder text from <a href="http://www.lipsum.com/">www.lipsum.com</a></p>
+    </section>
 
-  <h3>Menu Links</h3>
-  <ul>
-    <li><a href="https://www.google.com">Google</a></li>
-    <li><a href="https://www.facebook.com">Facebook</a></li>
-    <li><a href="https://www.twitter.com">Twitter</a></li>
-  </ul>
+    <aside id="contact-info">
+      <h2>Contact Info</h2>
+      <ul>
+        <li><strong>Email:</strong> <a href="#">someplace@gmail.com</a></li>
+        <li><strong>Github:</strong> <a href="#">sampleName</a></li>
+        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
+      </ul>
+    </aside>
+  </main>
 
 </body>
 
